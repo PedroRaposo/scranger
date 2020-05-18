@@ -20,8 +20,7 @@ knitr::opts_chunk$set(echo = TRUE)
 ```{r loading}
 options(warn=-1)
 
-list_sample_paths = strsplit(params$sample_paths, split = ',')[[1]]
-list_sample_names = strsplit(params$sample_names, split = ',')[[1]]
+list_sample_paths = params$sample_paths
 output_path = params$output_path
 
 library(Seurat)
